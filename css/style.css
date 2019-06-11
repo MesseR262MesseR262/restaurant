@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+section {
+  width: 100%; }
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.pointer {
+  cursor: pointer; }
+
+h1 {
+  color: white;
+  font-family: "Yeseva One", cursive;
+  font-size: 90px;
+  text-align: center;
+  width: 100%; }
+  h1::after {
+    content: url(../img/divider-start.png);
+    display: block;
+    padding: 0 0 34px 0; }
+  h1:first-letter {
+    text-transform: capitalize; }
+
+h2 {
+  font-family: "Yeseva One", cursive;
+  font-size: 36px; }
+
+header {
+  width: 100%;
+  position: fixed;
+  -webkit-box-shadow: inset 0px 80px 50px -16px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 80px 50px -16px rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+  header .container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .container .burger-cross {
+      display: none;
+      width: 100px;
+      height: 100px; }
+    header .container .logo {
+      background: url(../img/logo.png);
+      width: 154px;
+      height: 92px; }
+    header .container nav {
+      padding: 50px 0; }
+      header .container nav ul {
+        list-style: none; }
+        header .container nav ul li {
+          display: inline;
+          padding: 0 0 0 50px; }
+          header .container nav ul li a {
+            font-family: "Gentium Book Basic", serif;
+            color: white;
+            font-size: 21px;
+            padding: 48px 0 0 0;
+            text-decoration: none; }
+            header .container nav ul li a:hover {
+              border-top: 3px solid white;
+              -webkit-transition: 0.3s;
+              -o-transition: 0.3s;
+              transition: 0.3s; }
+    header .container .socials {
+      padding: 0 20px 0 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      header .container .socials a {
+        margin-left: 20px;
+        display: block; }
+      header .container .socials .twitter, header .container .socials .youtube, header .container .socials .fb {
+        width: 25px;
+        height: 25px; }
+        header .container .socials .twitter:hover, header .container .socials .youtube:hover, header .container .socials .fb:hover {
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+      header .container .socials .twitter {
+        background: url(../img/twitter-yellow.png); }
+        header .container .socials .twitter:hover {
+          background: url(../img/twitter-white.png); }
+      header .container .socials .youtube {
+        background: url(../img/youtube-yellow.png); }
+        header .container .socials .youtube:hover {
+          background: url(../img/youtube-white.png); }
+      header .container .socials .fb {
+        background: url(../img/fb-yellow.png); }
+        header .container .socials .fb:hover {
+          background: url(../img/fb-white.png); }
+
+.start {
+  background: url(../img/start-back.png) center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .start .container {
+    padding: 250px 0 140px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .start .container .buttons button {
+      padding: 23px 52px;
+      font-family: "Lato", sans-serif;
+      color: white;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 2px solid white; }
+      .start .container .buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 2px solid black;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      .start .container .buttons button:first-of-type {
+        margin: 0 30px 0 0; }
+
+.example {
+  background: url(../img/pattern.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 55px 0 30px 0; }
+  .example .container {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .example .container div {
+      padding: 50px 0 0 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .example .container div h2, .example .container div p {
+        text-align: center; }
+      .example .container div h2 {
+        color: #cc9900; }
+        .example .container div h2::after {
+          content: url(../img/divider-example.png);
+          display: block;
+          padding: 15px 0 32px 0; }
+      .example .container div p {
+        width: 430px;
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 52px 0; }
+      .example .container div img {
+        margin: 0 0 0 100px; }
+
+.ingredients {
+  background: url(../img/ingredients-back.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 100px 0; }
+  .ingredients .container {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0 40px 0 0; }
+    .ingredients .container .ingre-back {
+      padding: 80px 70px 75px 70px;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 570px; }
+      .ingredients .container .ingre-back h2, .ingredients .container .ingre-back p {
+        color: white;
+        text-align: center; }
+      .ingredients .container .ingre-back h2::after {
+        content: url(../img/divider-ingredients.png);
+        display: block;
+        padding: 16px 0 30px 0; }
+      .ingredients .container .ingre-back p {
+        font-family: "Lato", sans-serif;
+        font-size: 16px; }
+      .ingredients .container .ingre-back div {
+        padding: 70px 0 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        .ingredients .container .ingre-back div .ingredient {
+          border: 4px solid #3c3936;
+          -webkit-border-radius: 60%;
+          border-radius: 60%;
+          padding: 0; }
+
+.menu {
+  background: url(../img/pattern.png);
+  padding: 100px 0 30px 0; }
+  .menu .container {
+    padding: 0 110px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .menu .container .part-menu-own .subpart, .menu .container .part-menu-two .subpart {
+      padding: 0 0 70px 0; }
+      .menu .container .part-menu-own .subpart h2, .menu .container .part-menu-two .subpart h2 {
+        text-transform: capitalize;
+        color: #cc9900;
+        text-align: center; }
+        .menu .container .part-menu-own .subpart h2::after, .menu .container .part-menu-two .subpart h2::after {
+          content: url(../img/menu-divider.png);
+          display: block;
+          padding: 0 0 30px 0; }
+      .menu .container .part-menu-own .subpart .dish, .menu .container .part-menu-two .subpart .dish {
+        padding: 0 0 30px 0; }
+        .menu .container .part-menu-own .subpart .dish div, .menu .container .part-menu-two .subpart .dish div {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          border-bottom: 1px solid #cc9900;
+          padding: 0 0 15px 0; }
+          .menu .container .part-menu-own .subpart .dish div p, .menu .container .part-menu-two .subpart .dish div p {
+            font-family: "Yeseva One", cursive;
+            color: #cc9900;
+            text-transform: capitalize;
+            font-size: 21px; }
+        .menu .container .part-menu-own .subpart .dish p, .menu .container .part-menu-two .subpart .dish p {
+          padding: 15px 0 0 0;
+          font-size: 16px;
+          font-family: "Lato", sans-serif; }
+          .menu .container .part-menu-own .subpart .dish p:first-letter, .menu .container .part-menu-two .subpart .dish p:first-letter {
+            text-transform: uppercase; }
+      .menu .container .part-menu-own .subpart .special, .menu .container .part-menu-two .subpart .special {
+        border: 1px solid #cc9900;
+        padding: 0 10px 15px 10px;
+        margin: 15px 0;
+        position: relative;
+        z-index: 0; }
+        .menu .container .part-menu-own .subpart .special .special-banner, .menu .container .part-menu-two .subpart .special .special-banner {
+          background-color: #cc9900;
+          padding: 6px 13px;
+          font-family: "Lato", sans-serif;
+          color: white;
+          font-size: 14px;
+          text-transform: capitalize;
+          position: absolute;
+          top: -30px;
+          left: 314px; }
+
+.review {
+  background: url(../img/review-back.png) center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 100px 0; }
+  .review .container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .review .container .review-back {
+      padding: 82px 74px 103px 74px;
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 770px; }
+      .review .container .review-back h2, .review .container .review-back p {
+        color: white;
+        text-align: center; }
+      .review .container .review-back h2 {
+        text-transform: capitalize; }
+        .review .container .review-back h2::after {
+          content: url(../img/review-divider.png);
+          display: block;
+          padding: 15px 0 30px 0; }
+      .review .container .review-back .callback p {
+        font-family: "Lato", sans-serif;
+        font-size: 16px; }
+        .review .container .review-back .callback p:first-of-type {
+          font-family: "Gentium Book Basic", serif;
+          line-height: 45px;
+          font-size: 21px;
+          padding: 0 0 50px 0; }
+
+.booking {
+  background: url(../img/pattern.png);
+  padding: 100px 0; }
+  .booking .container {
+    padding: 0 110px 0 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .booking .container .book-images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .booking .container .book-images img {
+        margin: 0 0 0 40px; }
+    .booking .container .book {
+      width: 34%; }
+      .booking .container .book h2, .booking .container .book p {
+        text-align: center; }
+      .booking .container .book h2 {
+        color: #cc9900; }
+        .booking .container .book h2::after {
+          content: url(../img/menu-divider.png);
+          display: block;
+          padding: 15px 0; }
+        .booking .container .book h2:first-letter {
+          text-transform: uppercase; }
+      .booking .container .book p {
+        padding: 15px 0 0 0;
+        font-family: "Lato", sans-serif;
+        font-size: 16px; }
+      .booking .container .book form {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 45px 0 0 0;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .booking .container .book form label {
+          padding: 0 0 30px 0;
+          font-family: "Open Sans", sans-serif;
+          color: #cc9900;
+          font-size: 14px; }
+          .booking .container .book form label:first-letter {
+            text-transform: capitalize; }
+        .booking .container .book form input, .booking .container .book form select {
+          width: 170px;
+          display: block;
+          color: grey;
+          margin: 10px 0 0 0;
+          padding: 11px 0 11px 14px;
+          font-style: italic;
+          font-family: "Open Sans", sans-serif;
+          height: 42px; }
+          .booking .container .book form input::-webkit-input-placeholder, .booking .container .book form select::-webkit-input-placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-style: italic;
+            font-size: 16px; }
+          .booking .container .book form input::-moz-placeholder, .booking .container .book form select::-moz-placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-style: italic;
+            font-size: 16px; }
+          .booking .container .book form input:-ms-input-placeholder, .booking .container .book form select:-ms-input-placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-style: italic;
+            font-size: 16px; }
+          .booking .container .book form input::-ms-input-placeholder, .booking .container .book form select::-ms-input-placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-style: italic;
+            font-size: 16px; }
+          .booking .container .book form input::placeholder, .booking .container .book form select::placeholder {
+            font-family: "Open Sans", sans-serif;
+            font-style: italic;
+            font-size: 16px; }
+          .booking .container .book form input:focus, .booking .container .book form select:focus {
+            outline: 0;
+            border: 1px solid #cc9900; }
+            .booking .container .book form input:focus::-webkit-input-placeholder, .booking .container .book form select:focus::-webkit-input-placeholder {
+              color: transparent;
+              -webkit-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s; }
+            .booking .container .book form input:focus::-moz-placeholder, .booking .container .book form select:focus::-moz-placeholder {
+              color: transparent;
+              -webkit-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s; }
+            .booking .container .book form input:focus:-ms-input-placeholder, .booking .container .book form select:focus:-ms-input-placeholder {
+              color: transparent;
+              -webkit-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s; }
+            .booking .container .book form input:focus::-ms-input-placeholder, .booking .container .book form select:focus::-ms-input-placeholder {
+              color: transparent;
+              -webkit-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s; }
+            .booking .container .book form input:focus::placeholder, .booking .container .book form select:focus::placeholder {
+              color: transparent;
+              -webkit-transition: 0.5s;
+              -o-transition: 0.5s;
+              transition: 0.5s; }
+          .booking .container .book form input option, .booking .container .book form select option {
+            color: grey; }
+        .booking .container .book form button {
+          padding: 12px 0;
+          text-align: center;
+          width: 170px;
+          background-color: #cc9900;
+          color: white;
+          font-family: "Open Sans", sans-serif;
+          border: none;
+          margin: 0 auto; }
+          .booking .container .book form button:hover {
+            opacity: 0.9;
+            -webkit-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s; }
+          .booking .container .book form button:first-letter {
+            text-transform: uppercase; }
+
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: black; }
+  footer .container {
+    max-width: 1100px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    footer .container div {
+      width: 30%; }
+      footer .container div .footer-title, footer .container div .footer-describe {
+        color: white;
+        text-align: center; }
+      footer .container div .footer-title {
+        font-family: "Yeseva One", cursive;
+        font-size: 21px; }
+        footer .container div .footer-title::after {
+          content: url(../img/footer-divider.png);
+          display: block;
+          padding: 17px 0 23px 0; }
+      footer .container div .footer-describe {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        line-height: 24px; }
+        footer .container div .footer-describe span {
+          font-weight: bold; }
+      footer .container div .payments, footer .container div .footer-socials {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 55px 0 0 0;
+        display: flex; }
+        footer .container div .payments a, footer .container div .footer-socials a {
+          margin: 0 12px 0 0;
+          display: block; }
+          footer .container div .payments a:last-of-type, footer .container div .footer-socials a:last-of-type {
+            margin: 0; }
+        footer .container div .payments .twitter, footer .container div .payments .youtube, footer .container div .payments .fb, footer .container div .payments .paypal, footer .container div .payments .mastercard, footer .container div .payments .visa, footer .container div .footer-socials .twitter, footer .container div .footer-socials .youtube, footer .container div .footer-socials .fb, footer .container div .footer-socials .paypal, footer .container div .footer-socials .mastercard, footer .container div .footer-socials .visa {
+          width: 25px;
+          height: 25px; }
+          footer .container div .payments .twitter:hover, footer .container div .payments .youtube:hover, footer .container div .payments .fb:hover, footer .container div .payments .paypal:hover, footer .container div .payments .mastercard:hover, footer .container div .payments .visa:hover, footer .container div .footer-socials .twitter:hover, footer .container div .footer-socials .youtube:hover, footer .container div .footer-socials .fb:hover, footer .container div .footer-socials .paypal:hover, footer .container div .footer-socials .mastercard:hover, footer .container div .footer-socials .visa:hover {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+        footer .container div .payments .twitter, footer .container div .footer-socials .twitter {
+          background: url(../img/twitter-white.png); }
+          footer .container div .payments .twitter:hover, footer .container div .footer-socials .twitter:hover {
+            background: url(../img/twitter-yellow.png); }
+        footer .container div .payments .youtube, footer .container div .footer-socials .youtube {
+          background: url(../img/youtube-white.png); }
+          footer .container div .payments .youtube:hover, footer .container div .footer-socials .youtube:hover {
+            background: url(../img/youtube-yellow.png); }
+        footer .container div .payments .fb, footer .container div .footer-socials .fb {
+          background: url(../img/fb-white.png); }
+          footer .container div .payments .fb:hover, footer .container div .footer-socials .fb:hover {
+            background: url(../img/fb-yellow.png); }
+        footer .container div .payments .paypal, footer .container div .footer-socials .paypal {
+          background: url(../img/paypal-white.png); }
+          footer .container div .payments .paypal:hover, footer .container div .footer-socials .paypal:hover {
+            background: url(../img/paypal-yellow.png); }
+        footer .container div .payments .mastercard, footer .container div .footer-socials .mastercard {
+          background: url(../img/mastercard-white.png); }
+          footer .container div .payments .mastercard:hover, footer .container div .footer-socials .mastercard:hover {
+            background: url(../img/mastercard-yellow.png); }
+        footer .container div .payments .visa, footer .container div .footer-socials .visa {
+          background: url(../img/visa-white.png); }
+          footer .container div .payments .visa:hover, footer .container div .footer-socials .visa:hover {
+            background: url(../img/visa-yellow.png); }
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    font-size: 60px;
+    width: 90%; }
+  header .container .burger-cross {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    header .container .burger-cross .cross {
+      display: none; }
+  header .container nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #cc9900;
+    padding: 0;
+    width: 40%; }
+    header .container nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; }
+      header .container nav ul li {
+        padding: 10px 0; }
+        header .container nav ul li a {
+          width: 100%;
+          padding: 0;
+          text-transform: uppercase; }
+          header .container nav ul li a:hover {
+            border: none; }
+  .example .container, .menu .container, .booking .container, footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 10px; }
+  .booking .container .book {
+    padding: 50px 0 0 0;
+    width: 80%; }
+  .booking .container .book form {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .booking .container .book form button {
+    margin: 30px 0 0 0;
+    height: 50px; }
+  .booking .container .book-images img:first-of-type {
+    margin: 0; }
+  footer .container div {
+    width: 80%;
+    padding: 50px 0 0 0; } }
+
+@media screen and (max-width: 600px) {
+  header .container .logo {
+    display: none; }
+  header .container nav {
+    width: 100%; }
+  h1 {
+    font-size: 40px; }
+  .start .container .buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .start .container .buttons button:first-of-type {
+      margin: 0 0 20px 0; }
+  .example .container div p {
+    width: 90%; }
+  .example .container .dish, .ingredients .container .ingre-back {
+    width: 100%; }
+  .ingredients .container {
+    padding: 0; }
+  .ingredients .container .ingre-back {
+    padding: 20px; }
+  .ingredients .container .ingre-back div {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .ingredients .container .ingre-back div .ingredient {
+    margin: 10px 0 0 0; }
+  .menu .container .part-menu-own .subpart .special .special-banner, .menu .container .part-menu-two .subpart .special .special-banner {
+    left: -1px; }
+  .booking .container .book-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .booking .container .book-images img {
+      margin: 50px 0 0 0; }
+  .booking .container .book form input, .booking .container .book form select {
+    width: 260px; } }
